@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tasksText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="To Do List"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <!-- Filter By Button aligned top-right -->
+    <Button
+        android:id="@+id/filterBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter By"
+        android:layout_below="@id/tasksText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp" />
+
+    <!-- Filters text below the button, aligned START to the button -->
+    <TextView
+        android:id="@+id/activeFiltersText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filterBtn"
+        android:layout_alignStart="@id/filterBtn"
+        android:layout_marginTop="4dp"
+        android:text="Filters: None"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tasksRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/filterBtn"
+        android:layout_above="@id/default_activity_button"
+        android:layout_marginTop="44dp"
+        android:nestedScrollingEnabled="true"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <!-- Add Task Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/default_activity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:contentDescription="Add new task"
+        android:src="@drawable/baseline_add"
+        app:backgroundTint="?attr/colorPrimary"
+        app:tint="@color/md_theme_light_background"
+
+        />
+
+</RelativeLayout>

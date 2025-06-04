@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ToDoList" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Light and Dark colors from color.xml / color-night.xml -->
+        <item name="colorPrimary">@color/md_theme_light_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>
+        <item name="android:windowBackground">@color/md_theme_light_background</item>
+        <item name="android:textColorPrimary">@color/md_theme_light_onBackground</item>
+    </style>
+
+    <style name="Theme.ToDoList" parent="Base.Theme.ToDoList" />
+</resources>

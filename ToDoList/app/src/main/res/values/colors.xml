@@ -1,0 +1,9 @@
+<resources>
+    <color name="md_theme_light_primary">#6750A4</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_background">#FFFFFF</color>
+    <color name="md_theme_light_onBackground">#1C1B1F</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+
+
+</resources>
